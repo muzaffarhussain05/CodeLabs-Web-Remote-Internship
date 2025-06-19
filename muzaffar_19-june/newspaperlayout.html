@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Business Paper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .newspaper {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      display: grid;
+      gap: 25px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 3px solid #0074b8;
+      padding-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 2.8em;
+      color: #0074b8;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .meta {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .top-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+    .top-banner .highlight {
+      background: #e7f2fb;
+      padding: 10px 15px;
+      font-size: 0.95em;
+      line-height: 1.4;
+      border-left: 4px solid #0074b8;
+    }
+
+    .top-banner .highlight strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #ccc;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 4px;
+    }
+
+    article h2 {
+      font-size: 1.2em;
+      color: #0074b8;
+      margin-top: 5px;
+    }
+
+    article p {
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .quote {
+      background: #0074b8;
+      color: white;
+      padding: 10px 15px;
+      font-size: 0.9em;
+      border-left: 5px solid #004875;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="newspaper">
+    <div class="header">
+      <h1>DAILY BUSINESS PAPER</h1>
+      <div class="meta">Vol 37 &nbsp;|&nbsp; 18 January 2025 &nbsp;|&nbsp; Price: $10 USD</div>
+    </div>
+
+    <div class="top-banner">
+      <div class="highlight">
+        <strong>BOB LUZ</strong>
+        The BIG Turning Point: Insights from the CEO’s surprise pivot strategy.
+      </div>
+      <div class="highlight">
+        <strong>Data Variant:</strong>
+        Everything you need to know about the new cyber intelligence model.
+      </div>
+      <div class="highlight">
+        <strong>Wall Street Recovery:</strong>
+        Nasdaq rebounds as AI and GreenTech stocks surge.
+      </div>
+    </div>
+
+    <div class="articles">
+      <article>
+        <div class="placeholder">Image 300×200</div>
+        <h2>40 Million Verizon Users Hit by a Data Breach</h2>
+        <p>A recent cyberattack has affected over 40 million Verizon accounts. Hackers accessed email addresses and phone data. The company is conducting a thorough audit.</p>
+        <div class="quote">“Cybersecurity is now business-critical,” said Verizon spokesperson Jane Wells.</div>
+      </article>
+
+      <article>
+        <div class="placeholder">Image 300×200</div>
+        <h2>Startups Make Businesses Safe Haven from Weather</h2>
+        <p>With global supply chains disrupted by extreme weather, startups are rapidly adapting using modular infrastructure and predictive AI logistics systems.</p>
+      </article>
+
+      <article>
+        <div class="placeholder">Image 300×200</div>
+        <h2>Startups Provide a Safe Haven for Investors</h2>
+        <p>Private capital continues to flow into startup ecosystems. Angel and seed investors find stability in early-stage innovation, especially in fintech and medtech sectors.</p>
+      </article>
+    </div>
+  </div>
+
+</body>
+</html>

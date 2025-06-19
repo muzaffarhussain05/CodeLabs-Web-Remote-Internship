@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex + Grid Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      position: sticky;
+      top: 0;
+      z-index: 1000; /* Ensure it stays above content */
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .image {
+      background: #ccc;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .socials a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div class="image" style="background-image: url('https://www.wscubetech.com/blog/wp-content/uploads/2024/01/best-web-development-project-idea-1024x683.webp');"></div>
+      <div class="card-content">
+        <h3>Restaurant Website</h3>
+        <p>A restaurant website may sound simple and common, but it is an excellent web development project idea to practice and implement your learning.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image" style="background-image: url('https://cdn.prod.website-files.com/62c5836076839ad95e36215d/64fb2b64316862df3d2e099a_rcQYosTUaQ6hiJSAk7JphBXJCcZpPSAnq6u8U_3pnj0UVcHM5niGdGNBZ625bnZmRDTg4UQFOjd8tuczIfNSZ7JQeRBtnY4NHvGyGjRBe_DVE4QiDsVy9vcllRT7B1Ut7wx9CBDr945F26Um1hF4xM4.png');"></div>
+      <div class="card-content">
+        <h3>Portfolio Website</h3>
+        <p>A portfolio website highlights an individual’s work, skills, achievements, and experience.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image" style="background-image: url('https://elements-resized.envatousercontent.com/elements-cover-images/ddfe6f93-ab4e-4391-af6a-b2f8841ee09d?w=433&cf_fit=scale-down&q=85&format=auto&s=df4ec37c204532773f8b825f957a933aa32b716c3fc42a4ea1db9cab93e7ad53');"></div>
+      <div class="card-content">
+        <h3>Responsive Blog Website</h3>
+        <p>A responsive website adapts according to the screen size and optimizes content on the device, such as smartphones, laptops, desktops, and tablets.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image" style="background-image: url('https://www.wscubetech.com/blog/wp-content/uploads/2024/01/web-development-projects.webp');"></div>
+      <div class="card-content">
+        <h3>Online Code Editor</h3>
+        <p>You can access a remote server through a browser installed on an online code editor. A beginner or professional developer can’t use a local code editor.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 My Portfolio</p>
+    <div class="socials">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>
