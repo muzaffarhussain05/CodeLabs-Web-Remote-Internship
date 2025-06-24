@@ -1,0 +1,120 @@
+:root {
+    --bg: #f4f6f8;
+    --card-bg: #ffffff;
+    --text: #333;
+    --primary: #2e8b57;
+    --secondary: #dcdcdc;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .search-box button:hover {
+    background-color: #246b46;
+  }
+  
+  .search-box button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  #movie-details {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movie-card {
+    background-color: var(--card-bg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--shadow);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .movie-poster {
+    flex: 1 1 250px;
+    min-width: 250px;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-info h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .movie-info p {
+    font-size: 1rem;
+    margin-bottom: 8p
+  }
