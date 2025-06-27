@@ -1,0 +1,67 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Container layout */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #007acc;
+}
+
+/* Loading / Error Message */
+.status {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.status.error {
+  color: red;
+}
+
+/* User List Styles */
+.user-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.user-card {
+  padding: 1rem;
+  background-color: #e6f2ff;
+  border-left: 5px solid #007acc;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  background-color: #d4ecff;
+}
+
+.user-card h3 {
+  margin-bottom: 0.5rem;
+  color: #003d66;
+}
