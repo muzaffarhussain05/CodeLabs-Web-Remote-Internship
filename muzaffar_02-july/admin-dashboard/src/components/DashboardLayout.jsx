@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Slidebar from "./SlideBar";
+import Slidebar from "./Slidebar";
 import SmallComp from "./SmallComp";
 import TopSellingProduct from "./TopSellingProduct";
 
