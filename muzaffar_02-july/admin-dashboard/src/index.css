@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* index.css or App.css */
+body.dark-mode {
+    background-color: #111827; /* Tailwind's gray-900 */
+    color: #f9fafb;            /* Tailwind's gray-50 */
+  }
+  
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode p {
+    color: #f9fafb;
+  }
+  
+  body.dark-mode .bg-gray-50 {
+    background-color: #111827;
+  }
+  
+  body.dark-mode .border-gray-300 {
+    border-color: #374151; /* Tailwind's gray-700 */
+  }
+  
