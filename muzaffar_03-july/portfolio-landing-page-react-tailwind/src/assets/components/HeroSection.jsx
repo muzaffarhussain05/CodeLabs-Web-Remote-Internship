@@ -55,10 +55,10 @@ const HeroSection = () => {
           transition={{ delay: 1, duration: 0.8 }}
           className="flex gap-4 mt-4 text-white font-medium"
         >
-          <button className="bg-blue-500 py-3 px-8 rounded-2xl hover:bg-blue-600 transition duration-300">
+          <button className="bg-blue-500 text-white py-3 px-8 sm:py-2 sm:px-6 text-sm sm:text-base rounded-2xl hover:bg-blue-600 transition duration-300">
             Contact
           </button>
-          <button className="bg-blue-800 py-3 px-8 rounded-2xl hover:bg-blue-600 transition duration-300">
+          <button className="bg-blue-800 text-white py-3 px-8 sm:py-2 sm:px-6  text-sm sm:text-base rounded-2xl hover:bg-blue-600 transition duration-300">
             Learn More
           </button>
         </motion.div>
