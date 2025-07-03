@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.font-pizza {
+  font-family: Roboto Mono, monospace;
+}
+
+.input {
+  border-radius: 9999px;
+  border-width: 1px;
+
+  border-color: rgb(231 229 228);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.input:focus {
+
+ outline: 2px;
+border: 2px solid yellow;
+
+}
+.display-none{
+  display: none;
+}
