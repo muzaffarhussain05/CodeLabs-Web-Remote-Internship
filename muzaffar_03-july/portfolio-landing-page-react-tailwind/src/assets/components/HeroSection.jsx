@@ -73,7 +73,7 @@ const HeroSection = () => {
       >
         <img
           className="rounded-2xl w-full max-w-xs md:max-w-sm lg:max-w-md"
-          src="./src/assets/pic.jpg"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQGzNvyMJbFt3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721927666040?e=1756944000&v=beta&t=WcrbFzvdaO61aW-d93cLLx9tkTT9IdzjBZFjRXTwn0E"
           alt="Muzaffar Hussain"
         />
       </motion.div>

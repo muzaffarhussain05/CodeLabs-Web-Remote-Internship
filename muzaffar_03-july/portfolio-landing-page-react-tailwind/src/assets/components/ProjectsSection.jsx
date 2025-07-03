@@ -1,4 +1,8 @@
 import React from "react";
+import restaurantImg from "../Restaurant.jpg";
+import jobPortalImg from "../jobportal.jpg";
+import plantCareImg from "../plantcare.jpg";
+
 
 const cardBase =
   "bg-white rounded-xl shadow-md overflow-hidden flex-1 transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:bg-gray-50";
@@ -8,10 +12,10 @@ const ProjectsSection = () => (
     <h2 className="text-center font-bold text-4xl mb-12">Recent Projects</h2>
 
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
-      {/* --- Card 1 --- */}
+     
       <article className={cardBase}>
         <img
-          src="/src/assets/Restaurant.jpg"
+          src={restaurantImg}
           alt="Restaurant Website"
           className="w-full h-56 object-cover rounded-t-xl"
         />
@@ -25,10 +29,10 @@ const ProjectsSection = () => (
         </div>
       </article>
 
-      {/* --- Card 2 --- */}
+    
       <article className={cardBase}>
         <img
-          src="/src/assets/jobportal.jpg"
+          src={jobPortalImg}
           alt="Job Portal"
           className="w-full h-56 object-cover rounded-t-xl"
         />
@@ -42,10 +46,10 @@ const ProjectsSection = () => (
         </div>
       </article>
 
-      {/* --- Card 3 --- */}
+      
       <article className={cardBase}>
         <img
-          src="/src/assets/plantcare.jpg"
+          src={plantCareImg}
           alt="Plant Care Assistant"
           className="w-full h-56 object-cover rounded-t-xl"
         />
